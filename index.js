@@ -71,6 +71,8 @@ server.listen(process.env.port || process.env.PORT || 3979, function() {
     console.log('\nTo talk to your bot, open the emulator select "Open Bot"');
 });
 
+
+
 // Listen for incoming requests.
 server.post('/api/messages', (req, res) => {
     adapter.processActivity(req, res, async (context) => {
